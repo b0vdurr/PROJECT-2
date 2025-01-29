@@ -9,7 +9,6 @@ def createPDF(filename, text, logo_path='logo.png'):
     doc = SimpleDocTemplate(f'PDF_INVOICE/{filename}.pdf', pagesize=A4)
     styles = getSampleStyleSheet()
     body_style = styles['BodyText']
-    title_style = ParagraphStyle('Title', parent=styles['Title'], alignment=1, spaceAfter=20)
     section_title_style = ParagraphStyle('SectionTitle', parent=styles['Heading1'], alignment=1, spaceAfter=10)
     
     elements = []
